@@ -1,4 +1,4 @@
-package com.sionicai.assignment
+package com.ai.assignment
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

@@ -5,6 +5,7 @@ spring:
   config:
     import:
       - optional:file:env/db.env[.properties]
+      - optional:file:env/jwt.env[.properties]
   datasource:
     driver-class-name: org.postgresql.Driver
     url: ${POSTGRES_URL}
@@ -16,3 +17,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+jwt:
+  secret-key: ${JWT_SECRET_KEY}
+  access-token-expiration-time: ${ACCESS_TIME}
+  refresh-token-expiration-time: ${REFRESH_TIME}

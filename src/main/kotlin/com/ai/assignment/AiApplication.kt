@@ -1,11 +1,11 @@
-package com.sionicai.assignment
+package com.ai.assignment
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SionicaiApplication
+class AiApplication
 
 fun main(args: Array<String>) {
-    runApplication<SionicaiApplication>(*args)
+    runApplication<AiApplication>(*args)
 }
