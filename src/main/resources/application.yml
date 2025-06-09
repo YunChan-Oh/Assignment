@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    import:
+      - optional:file:env/db.env[.properties]
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    show-sql: true
